@@ -33,8 +33,9 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(route = "form_screen") {
+                            // PERBAIKAN: Mengganti parameter lama menjadi navController
                             HubungiKamiScreen(
-                                onNavigateUp = { navController.navigateUp() }
+                                navController = navController
                             )
                         }
                     }
